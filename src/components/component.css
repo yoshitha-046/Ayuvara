@@ -1,7 +1,7 @@
-.custom-btn {
-  width: 45rem;      /* increased from 326px */
-  height: 9rem;      /* increased from 60px */
-  border-radius: 4rem;  /* slightly larger to match new height */
+/* .custom-btn {
+  width: 45rem;      
+  height: 9rem;     
+  border-radius: 4rem;  
   background: linear-gradient(to right, #7CC089, #3A5A40);
   color: white;
   font: normal 700 2.5rem/1.2 "Arial", "Helvetica", sans-serif;
@@ -13,6 +13,30 @@
 
 .custom-btn:hover {
   opacity: 0.9;
-  width: 50rem; /* increase width on hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* stronger shadow on hover */
+  width: 50rem; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); 
+} */
+
+.custom-btn {
+  width: 45rem;
+  height: 9rem;
+  border-radius: 4rem;
+  background: linear-gradient(to right, #7CC089, #3A5A40);
+  color: white;
+  font: normal 700 2.5rem/1.2 "Arial", "Helvetica", sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border: none;
+
+  /* much slower, smooth animation */
+  transition: transform 1s ease-in-out, 
+              box-shadow 1s ease-in-out, 
+              opacity 2.5s ease-in-out;
 }
+
+.custom-btn:hover {
+  transform: scale(1.1);       
+  opacity: 0.9;                
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); 
+}
+
