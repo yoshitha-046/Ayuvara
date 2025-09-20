@@ -1,6 +1,6 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 /* You can keep your custom styles below if needed */
 
@@ -20,7 +20,7 @@ html, body, #root {
     #9CC49D 100%
   );
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: flex-end; /* keeps block at bottom */
 }
 
