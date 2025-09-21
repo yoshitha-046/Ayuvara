@@ -1,37 +1,32 @@
 /* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+ @tailwind components; 
+ @tailwind utilities; */ 
 
-/* You can keep your custom styles below if needed */
-
-html, body, #root {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+ /* You can keep your custom styles below if needed */
+html, body, #root { 
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+  overflow-x: hidden; 
 }
 
-.background {
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(
-    to bottom right,
-    #E9EFC9 0%,
-    #BFD9B8 50%,
-    #9CC49D 100%
-  );
-  display: flex;
-  justify-content:center;
-  align-items: flex-end; /* keeps block at bottom */
-}
+ .background { 
+  height: 100vh; 
+  width: 100%; 
+  background: linear-gradient( to bottom right, #E9EFC9 0%, #BFD9B8 50%, #9CC49D 100% ); 
+  display: flex; 
+  justify-content:center; 
+  align-items: flex-end;
+  margin-bottom: 0; 
+ }
 
-.block {
-  width: 100%;
-  height: 55vh;                  /* take exactly half the screen */
-  background-color: #f2faeae5;   /* card color */
-  border-radius: 10rem 10rem 0 0;  /* smoother curve */
-  padding: 2rem;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
+ .block { 
+  width: 100%; 
+  height: 50vh; 
+  background-color: #f2faeae5; 
+  border-radius: 10rem 10rem 0 0; 
+  padding: 2rem; 
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1); 
+  display: flex; 
+  justify-content: center; 
 }
-

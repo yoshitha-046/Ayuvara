@@ -1,0 +1,35 @@
+:root {
+  --primary-green: linear-gradient(to right, #7CC089, #3A5A40);
+  --light-green: #a7c957;
+  --white: #ffffff;
+  --grey-text: #6b6b6b;
+  --light-grey-bg: #f0f0f0;
+  --border-radius-large: 4rem; /* 15px */
+  --border-radius-small: 50%;
+  --box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, .5);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    to bottom right,
+    #e9efc9 0%,
+    #bfd9b8 50%,
+    #9cc49d 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Responsive for iPhone 12 Pro and smaller */
+@media (max-width: 26.25rem) {
+  .container {
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+}

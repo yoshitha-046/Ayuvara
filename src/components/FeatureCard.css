@@ -1,0 +1,79 @@
+.feature-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* space between items */
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 20rem;
+  width: 25rem;
+}
+
+.feature-card.full-width {
+  grid-column: span 2; /* takes full row */
+}
+
+.feature-card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.feature-card p {
+  font-size: 1.5rem;
+  font-weight:600;
+  margin-bottom: -1rem;
+  color: var(--grey-text);
+}
+
+.feature-card img {
+  width: 6rem;
+  height: 6rem;
+}
+
+/* Active State */
+.feature-card.active {
+  background: var(--primary-green);
+  color: var(--white);
+}
+
+.feature-card.active .material-icons {
+  color: var(--white);
+}
+
+.feature-card.active h3,
+.feature-card.active p {
+  color: var(--white);
+}
+
+/* Hover */
+.feature-card:hover {
+  transform: translateY(-0.1875rem);
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.12);
+}
+
+.feature-card:hover:not(.active) {
+  background-color: var(--light-grey-bg);
+}
+
+/* Better grid alignment on iPhone */
+@media (max-width: 26.25rem) {
+  .feature-card {
+    height: 5.3rem;
+    min-height: 5.3rem;
+    padding: 0.5rem;
+  }
+  .feature-card h3 {
+    font-size: 0.85rem;
+  }
+  .feature-card p {
+    font-size: 0.65rem;
+  }
+}
