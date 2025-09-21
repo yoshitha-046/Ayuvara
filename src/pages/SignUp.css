@@ -1,0 +1,102 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Signup card */
+.signup-card {
+  text-align: center;
+  height: 90%;
+  width: 100%;
+  background:none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem; /* added padding for inner spacing */
+}
+
+.signup-card h1 {
+  color: #333;
+  font-size: 6rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 3rem; /* space below heading */
+}
+
+/* Input fields spacing */
+.signup-card form > *:not(.otp-group):not(.btn-signup) {
+  margin-bottom: 2rem; 
+}
+
+/* Password toggle (eye icon) */
+.password-toggle {
+  cursor: pointer;
+  color: #999 !important;
+  transition: color 0.2s ease;
+}
+
+.password-toggle:hover {
+  color: #3f6b3f !important;
+}
+
+/* OTP group (input + button side by side) */
+.otp-group {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.otp-group input {
+  flex: 1;
+  background-color: #fffefe;
+  border: none;
+  outline: none;
+  padding: 0.9rem;
+  border-radius:2.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.otp-group button {
+  border-radius: 2.5rem;
+  width: 20rem;
+  padding: 0.9rem 1.2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Tab menu */
+.tab-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+
+.tab-menu ul {
+  display: flex;       
+  list-style: none;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tab {
+  display: flex;       
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  background: #3A5A40;
+  font-weight: 700;
+  font-size: 3rem;
+  width: 25rem;
+  height: 8rem;
+}
+
+.tab.active {
+  background-color: #cce5cc;
+  color: #2f4f2f;
+}
